@@ -1,0 +1,435 @@
+.section1>div{
+
+
+    background: url('../images/01/products.png') no-repeat center,
+                url('../images/01/bg.png') no-repeat center bottom;
+}
+
+.section1 .sofa{
+
+    /* 中线布局 */
+    position: absolute;
+    left:50%;
+    margin-left: -180px;
+    bottom:330px;
+
+    animation: shake 0.7s alternate infinite;
+}
+
+
+.section1 .ball{
+
+    position: absolute;
+    left:50%;
+    margin-left: 130px;
+    bottom:480px;
+    animation: shake 0.9s alternate infinite;
+}
+
+
+@keyframes shake{
+
+    from{}
+    to{
+        transform: translateY(-50px);
+    }
+}
+
+
+/* 第二屏开始 */
+.section2>div{
+    background: url(../images/02/bg.png) no-repeat center bottom;
+}
+
+.section2 .sofas{
+
+    position: absolute;
+    right:50%;
+    margin-right: -220px;
+
+    bottom:210px;
+    width:0px;
+}
+
+.section2 .search{
+
+    width: 222px;
+    height: 45px;
+
+    position: absolute;
+    left:50%;
+    margin-left:380px;
+
+    bottom:300px;
+}
+
+
+
+/* 第三屏开始 */
+.section3>div{
+    background: url(../images/03/bg.png) no-repeat center;
+}
+
+
+.section3 .sofa{
+
+    position: absolute;
+    left:50%;
+    margin-left: -234px;
+
+    bottom:50%;
+    margin-bottom:-60px;
+}
+
+
+.section3 .color{
+    width: 296px;
+    height: 131px;
+    background: url(../images/03/color01.gif) no-repeat;
+
+    position: absolute;
+    left:50%;
+    margin-left: 40px;
+}
+
+.section3 .cart{
+
+    width: 218px;
+    height: 58px;
+    background: url(../images/03/add01.gif) no-repeat;
+
+    position: absolute;
+    left:50%;
+    margin-left: 40px;
+
+    bottom:50%;
+    margin-bottom: -190px;
+}
+
+.section3.animation .color{
+    transition: all 1s;
+    background: url(../images/03/color02.gif) no-repeat;
+}
+
+.section3.animation .cart{
+    transition: all 1s;
+    background: url(../images/03/add02.gif) no-repeat;
+}
+
+
+/* 第四屏开始 */
+.section4>div{
+
+    background: url(../images/04/bg.png) no-repeat center bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .cloud{
+
+    position: absolute;
+    top:10px;
+    right:0;
+
+    animation: cloud 50s infinite linear;
+}
+
+
+@keyframes cloud{
+
+    from{}
+
+    to{
+
+        transform: translateX(-1800px);
+    }
+}
+
+
+.section4 .keyboard{
+    margin-top: 50px;
+    width: 283px;
+    height: 270px;
+    background: url(../images/04/keyboard.png) no-repeat;
+    position: relative;
+
+    opacity: 0;
+}
+
+.section4 .address{
+
+    position: absolute;
+    left:64px;
+    top: 60px;
+}
+
+
+.section4 .carBox{
+    width: 407px;
+    height: 346px;
+    position: absolute;
+    bottom:50px;
+}
+
+.section4 .sofa{
+
+    position: absolute;
+    left:140px;
+    top:-40px;
+}
+
+.section4 .car{
+
+    position: absolute;
+}
+
+/* 第五屏 */
+.section5>div{
+
+    perspective: 600px;
+    background: url(../images/05/bg.png);
+}
+
+
+.section5 .cardBox{
+
+    position: absolute;
+    left:50%;
+    margin-left: -380px;
+    bottom:160px;
+
+    width: 358px;
+    height: 221px;
+}
+
+
+.section5 .bill{
+
+    position: absolute;
+    left:150px;
+ 
+}
+
+
+.section5 .card{
+
+    position: absolute;
+}
+
+
+.section5 .mouse{
+    width: 205px;
+    height: 400px;
+    background:url(../images/05/mouse01.png) no-repeat left bottom;
+
+    position: absolute;
+    left:50%;
+    margin-left: 300px;
+    bottom:230px;
+}
+
+.section5 .hand{
+
+    position: absolute;
+    left:50%;
+    margin-left: 270px;
+    bottom:-60px;
+}
+
+
+.section5 .words{
+
+    position: absolute;
+    left:50%;
+    margin-left: -270px;
+    top:40px;
+
+    opacity: 0;
+}
+
+
+.section5.animation .hand{
+
+    transition: all .8s;
+    bottom:0px;
+}
+
+
+.section5.animation .mouse{
+
+    transition: all 1s .8s;
+    background:url(../images/05/mouse02.png) no-repeat left bottom;
+}
+
+
+.section5.animation .bill{
+
+    transition: all 1s 1.8s;
+    /* top:-130px; */
+
+    transform: translateY(-130px);
+}
+
+
+.section5.animation .words{
+
+    transition:  all 1s 2.8s; 
+
+    transform: rotateY(360deg) scale(1.3);
+    opacity: 1;
+}
+
+
+/* 第六屏开始 */
+.section6 .street{
+
+    width: 100%;
+    height: 100%;
+    background: url(../images/06/bg.png) repeat-x -230px bottom;
+}
+
+
+.section6 .carBox{
+
+    width: 221px;
+    height: 122px;
+    position: absolute;
+
+    left:490px;
+    bottom:86px;
+}
+
+.section6 .man{
+
+    height:0;
+    position: absolute;
+    right:0;
+    bottom: 20px;
+}
+
+.section6 .car{
+    position: absolute;
+}
+
+
+.section6 .bag{
+
+    width: 123px;
+    height: 85px;
+    position: absolute;
+
+    left:520px;
+    bottom:486px;
+}
+
+.section6 .sofa{
+    width: 80px;
+    position: absolute;
+    left:18px;
+    top:-20px;
+}
+
+.section6 .box{
+
+    position: absolute;
+}
+
+.section6 .door{
+
+    position: absolute;
+    left:910px;
+    bottom:116px;
+    display: none;
+}
+
+.section6 .girl{
+
+    position: absolute;
+    left:960px;
+    bottom:116px;
+    height:120px;
+    display: none;
+}
+
+
+/* 第七屏 */
+.section7>div{
+
+    background: url(../images/07/bg.png) no-repeat center bottom;
+}
+
+.section7 .star{
+
+    width: 0;
+    height: 17px;
+    background: url(../images/07/stars3.png) no-repeat;
+    position: absolute;
+    left:50%;
+    margin-left: -300px;
+    bottom: 442px;
+}
+
+
+.section7 .good{
+
+    position: absolute;
+    left:50%;
+    margin-left: -280px;
+    bottom: 380px;
+    opacity: 0;;
+}
+
+.section7.animation .star{
+
+    transition: all 1s steps(5);
+    width: 105px;;
+}
+
+.section7.animation .good{
+
+    transition: all 1s 1s;
+    opacity: 1;
+}
+
+
+/* 第八屏 */
+.section8>div{
+
+    background: url(../images/08/bg.png);
+}
+
+
+
+.section8 .begin{
+    width: 389px;
+    height: 160px;
+    background: url(../images/08/begin.png);
+    position: absolute;
+    left:50%;
+    margin-left: -195px;
+    top:40px;
+}
+
+.section8 .begin:hover{
+
+    background: url(../images/08/begin.gif);
+}
+
+
+.section8 .again{
+
+    position: absolute;
+    right:50px;
+    bottom:80px;
+}
+
+
+.section8 .hand{
+
+    /* 不接受鼠标带来的事件 */
+    pointer-events: none;
+    position: absolute;
+}
